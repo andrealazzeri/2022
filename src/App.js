@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import Game from './pages/game';
+import Miperfil from './pages/miperfil';
 import Button from './components/Button';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <Routes>
      <Route path='/' element={<Home/>}/>
      <Route path='/game' element={<Game/>}/>
+     <Route path='/miperfil' element={<Miperfil/>}/>
     </Routes>
     </BrowserRouter> 
   );

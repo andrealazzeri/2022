@@ -4,11 +4,12 @@ import { useNavigate } from 'react-router-dom';
 function Home () {
     const navigate = useNavigate();
 
-    const onClickButton = () => {
-        navigate ('/game');
+    const onClickButton = (URL) => {
+        navigate (URL);
     }
 return(
-    <Button onClick={onClickButton} text='MetCamp Quiz'/>
+    <><Button onClick={() => onClickButton('/game')} text='MetCamp Quiz' />
+    <Button onClick={() => onClickButton('/miperfil')} text='Mi Perfil' /></>
 )
 }
 
