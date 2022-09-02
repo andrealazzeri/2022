@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import Game from './pages/game';
 import Miperfil from './pages/miperfil';
-import Button from './components/Button';
+import 'bulma/css/bulma.min.css';
+import "./index.css";
 
 function App() {
   return (
